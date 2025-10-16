@@ -20,13 +20,18 @@
 
 ---
 
-<img width="1125" height="2163" alt="MusicSuite" src="https://github.com/user-attachments/assets/e3f576b1-e6ca-4486-b870-c52643a31a9f" />
+<h2>📸 Vista previa de la app</h2>
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+
+  <img src="https://github.com/user-attachments/assets/e3f576b1-e6ca-4486-b870-c52643a31a9f" alt="MusicSuite" width="250"/>
+
+  <img src="https://github.com/user-attachments/assets/1f3a81df-ed9d-4eeb-9bdb-53eac049df34" alt="Search Screen" width="250"/>
+
+  <img src="https://github.com/user-attachments/assets/b648b077-b61d-49e6-ac89-178d3376957e" alt="Favorites Library" width="250"/>
+
+  <img src="https://github.com/user-attachments/assets/a6dfde54-7e29-419a-a9c9-db870c7bc2fb" alt="Now Playing" width="250"/>
+
+</div>
 
 
-<img width="371" height="858" alt="Search Screen" src="https://github.com/user-attachments/assets/1f3a81df-ed9d-4eeb-9bdb-53eac049df34" />
-
-
-<img width="307" height="867" alt="Favorites Library" src="https://github.com/user-attachments/assets/b648b077-b61d-49e6-ac89-178d3376957e" />
-
-
-<img width="310" height="757" alt="Now Playing" src="https://github.com/user-attachments/assets/a6dfde54-7e29-419a-a9c9-db870c7bc2fb" />
