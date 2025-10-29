@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">spots</string>
+    <string name="errorMsgAdd">Error Adding Data</string>
+    <string name="errorMsgUpdate">Error Updating Data</string>
+    <string name="errorMsgGetAll">Error getting all the data</string>
+    <string name="errorMsgGetById">Error getting the data by Id</string>
+    <string name="errorMsgDataWasNotFound">Data Not Found</string>
+    <string name="errorMsgRemove">Error removing the data</string>
+</resources>
