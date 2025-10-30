@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">spots</string>
+    <string name="errorMsgAdd">Error Añadiendo Data</string>
+    <string name="errorMsgUpdate">Error Actualizando Data</string>
+    <string name="errorMsgGetAll">Error obteniendo toda la data</string>
+    <string name="errorMsgGetById">Error obteniendo data por Id</string>
+    <string name="errorMsgDataWasNotFound">Data no encontrada</string>
+    <string name="errorMsgRemove">Error removiendo la data</string>
 </resources>
