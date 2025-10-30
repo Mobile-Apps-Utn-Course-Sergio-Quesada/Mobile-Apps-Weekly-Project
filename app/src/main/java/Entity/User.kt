@@ -2,13 +2,15 @@ package Entity
 
 class User {
     private var username: String = ""
+    private var password: String = ""
     private var email: String = ""
     private var fullName: String = ""
 
-    constructor(username: String, email: String, fullName: String){
+    constructor(username: String, email: String, fullName: String, password: String){
         this.fullName = fullName
         this.email = email
         this.username = username
+        this.password = password
     }
 
     constructor(){}
@@ -24,4 +26,8 @@ class User {
     var FullName: String
         get() = this.fullName
         set(value) {this.fullName = value}
+
+    var Password: String
+        get() = this.password
+        set(value) {this.password = value}
 }
