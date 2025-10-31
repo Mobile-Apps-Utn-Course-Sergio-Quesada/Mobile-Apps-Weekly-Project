@@ -6,4 +6,10 @@
     <string name="errorMsgGetById">Error obteniendo data por Id</string>
     <string name="errorMsgDataWasNotFound">Data no encontrada</string>
     <string name="errorMsgRemove">Error removiendo la data</string>
+    <string name="txtEmail">Correo</string>
+    <string name="txtPassword">Contraseña</string>
+    <string name="txtUsername">Usuario</string>
+    <string name="txtButton">Guardar</string>
+    <string name="txtFullName">Nombre Completo</string>
+    <string name="txtRegister">Registro</string>
 </resources>

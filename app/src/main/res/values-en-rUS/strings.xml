@@ -7,4 +7,10 @@
     <string name="errorMsgGetById">Error getting the data by Id</string>
     <string name="errorMsgDataWasNotFound">Data Not Found</string>
     <string name="errorMsgRemove">Error removing the data</string>
+    <string name="txtEmail">Email</string>
+    <string name="txtPassword">Password</string>
+    <string name="txtUsername">Username</string>
+    <string name="txtButton">Save</string>
+    <string name="txtFullName">Full Name</string>
+    <string name="txtRegister">Register</string>
 </resources>
