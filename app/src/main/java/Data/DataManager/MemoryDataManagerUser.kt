@@ -19,18 +19,9 @@ object MemoryDataManagerUser : IUserDataManager {
         userList.removeIf { it.Username.trim() == id.trim() }
     }
 
-    override fun getById(id: String): User? {
-        try {
-            var result = userList.filter { it.Username == id }
-            return if (result.any()) result[0] else null
-        } catch (e: Exception) {
-            throw e
-        }
-    }
-
     override fun getAll(): List<User> = userList
 
-    override fun getByFullName(fullName: String): User? {
+    override fun getByUsername(fullName: String): User? {
         try {
             var result = userList.filter { it.FullName == fullName }
             return if (result.any()) result[0] else null
