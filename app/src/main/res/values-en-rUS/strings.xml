@@ -7,10 +7,19 @@
     <string name="errorMsgGetById">Error getting the data by Id</string>
     <string name="errorMsgDataWasNotFound">Data Not Found</string>
     <string name="errorMsgRemove">Error removing the data</string>
-    <string name="txtEmail">Email</string>
-    <string name="txtPassword">Password</string>
-    <string name="txtUsername">Username</string>
+    <string name="txtEmail">* Email</string>
+    <string name="txtPassword">* Password</string>
+    <string name="txtUsername">* Username</string>
     <string name="txtButton">Save</string>
-    <string name="txtFullName">Full Name</string>
+    <string name="txtFullName">* Full Name</string>
     <string name="txtRegister">Register</string>
+    <string name="txtMenu_Save">Save</string>
+    <string name="txtMenu_Delete">Delete</string>
+    <string name="txtMenu_Cancel">Cancel</string>
+    <string name="MsgDuplicateEntry">The information is duplicated</string>
+    <string name="MsgSaveSuccess">The data was saved successful</string>
+    <string name="MsgDeleteSuccess">The data was deleted successful</string>
+    <string name="TextYes">Yes</string>
+    <string name="TextNo">No</string>
+    <string name="TextTitleDialogQuestion">Question...</string>
 </resources>

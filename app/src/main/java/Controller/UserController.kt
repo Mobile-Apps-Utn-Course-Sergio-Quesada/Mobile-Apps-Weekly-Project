@@ -7,11 +7,17 @@ import android.content.Context
 import cr.ac.utn.spots.R
 
 class UserController {
-    private var dataManager: IUserDataManager = MemoryDataManagerUser
+
     private var context: Context
+    private var dataManager: IUserDataManager = MemoryDataManagerUser
+
 
     constructor(dataManager: IUserDataManager, context: Context){
         this.dataManager = dataManager
+        this.context = context
+    }
+
+    constructor(context: Context) {
         this.context = context
     }
 
@@ -39,37 +45,21 @@ class UserController {
         }
     }
 
-    fun getUserById(id: String): User {
+    fun getUserByUsername(username: String): User? {
         try{
-            val result = dataManager.getById(id)
-            if(result == null){
-                throw Exception(context.getString(R.string.errorMsgGetById))
-            }
-            return result
+            return dataManager.getByUsername(username)
         } catch (e: Exception){
-            throw Exception(context.getString(R.string.errorMsgDataWasNotFound))
+            throw Exception("Error al obtener dato específico")
         }
     }
 
-    fun getPersonByFullName(name: String): User {
-        try{
-            val result = dataManager.getByFullName(name)
-            if(result == null){
-                throw Exception(context.getString(R.string.errorMsgGetById))
-            }
-            return result
-        } catch (e: Exception){
-            throw Exception(context.getString(R.string.errorMsgDataWasNotFound))
-        }
-    }
-
-    fun removePerson(id: String){
+    fun removeUser(username: String){
         try {
-            val result = dataManager.getById(id)
+            val result = dataManager.getByUsername(username)
             if(result == null){
                 throw Exception(context.getString(R.string.errorMsgDataWasNotFound))
             }
-            dataManager.remove(id)
+            dataManager.remove(username)
         }catch (e: Exception){
             throw Exception(context.getString(R.string.errorMsgRemove))
         }
