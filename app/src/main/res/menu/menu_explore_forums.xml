@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_refresh_explore"
+        android:title="@string/menu_refresh"
+        android:icon="@android:drawable/ic_popup_sync"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_sort_by_name"
+        android:title="@string/menu_sort_by_name"
+        android:icon="@android:drawable/ic_menu_sort_alphabetically"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_sort_by_members"
+        android:title="@string/menu_sort_by_members"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        app:showAsAction="never"/>
+
+</menu>

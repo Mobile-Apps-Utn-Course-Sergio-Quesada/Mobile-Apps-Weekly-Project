@@ -1,16 +1,16 @@
 package Controller
 
-import Data.DataManager.MemoryDataManagerUser
-import Data.IDataManager.IUserDataManager
-import Entity.User
+import Data.DataManager.MemoryDataManagerPost
+import Data.IDataManager.IPostDataManager
+import Entity.Post
 import android.content.Context
 import cr.ac.utn.spots.R
 
-class UserController {
+class PostController {
     private var context: Context
-    private var dataManager: IUserDataManager = MemoryDataManagerUser
+    private var dataManager: IPostDataManager = MemoryDataManagerPost
 
-    constructor(dataManager: IUserDataManager, context: Context) {
+    constructor(dataManager: IPostDataManager, context: Context) {
         this.dataManager = dataManager
         this.context = context
     }
@@ -19,23 +19,23 @@ class UserController {
         this.context = context
     }
 
-    fun addUser(user: User) {
+    fun addPost(post: Post) {
         try {
-            dataManager.add(user)
+            dataManager.add(post)
         } catch (e: Exception) {
             throw Exception(context.getString(R.string.errorMsgAdd))
         }
     }
 
-    fun updateUser(user: User) {
+    fun updatePost(post: Post) {
         try {
-            dataManager.update(user)
+            dataManager.update(post)
         } catch (e: Exception) {
             throw Exception(context.getString(R.string.errorMsgUpdate))
         }
     }
 
-    fun getAllUsers(): List<User> {
+    fun getAllPost(): List<Post> {
         try {
             return dataManager.getAll()
         } catch (e: Exception) {
@@ -43,21 +43,29 @@ class UserController {
         }
     }
 
-    fun getUserByUsername(username: String): User? {
+    fun getById(id: String): Post? {
         try {
-            return dataManager.getByUsername(username)
+            return dataManager.getById(id)
         } catch (e: Exception) {
-            throw Exception(context.getString(R.string.errorMsgGetById))
+            throw Exception(context.getString(R.string.ErrorMsgGetById))
         }
     }
 
-    fun removeUser(username: String) {
+    fun getPostByTitle(title: String): Post? {
         try {
-            val result = dataManager.getByUsername(username)
+            return dataManager.getByTitle(title)
+        } catch (e: Exception) {
+            throw Exception(context.getString(R.string.ErrorMsgGetById))
+        }
+    }
+
+    fun removePost(id: String) {
+        try {
+            val result = dataManager.getById(id)
             if (result == null) {
                 throw Exception(context.getString(R.string.errorMsgDataWasNotFound))
             }
-            dataManager.remove(username)
+            dataManager.remove(id)
         } catch (e: Exception) {
             throw Exception(context.getString(R.string.errorMsgRemove))
         }

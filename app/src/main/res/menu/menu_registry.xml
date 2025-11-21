@@ -2,19 +2,23 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- ✅ IDs CORREGIDOS para coincidir con el código -->
     <item
-        android:id="@+id/menu_save"
+        android:id="@+id/mnu_save"
         android:icon="@android:drawable/ic_menu_save"
         android:title="@string/txtMenu_Save"
         app:showAsAction="ifRoom" />
+
     <item
-        android:id="@+id/menu_delete"
+        android:id="@+id/mnu_delete"
         android:icon="@android:drawable/ic_menu_delete"
         android:title="@string/txtMenu_Delete"
         app:showAsAction="ifRoom" />
+
     <item
-        android:id="@+id/menu_cancel"
+        android:id="@+id/mnu_cancel"
         android:icon="@android:drawable/ic_menu_close_clear_cancel"
         android:title="@string/txtMenu_Cancel"
         app:showAsAction="ifRoom" />
+
 </menu>

@@ -2,7 +2,7 @@ package cr.ac.utn.spots
 
 import Controller.UserController
 import Entity.User
-import Utils.Util
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
@@ -49,26 +49,26 @@ class RegisterActivity: AppCompatActivity() {
     override fun onCreateOptionsMenu(menu: Menu?): Boolean{
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.menu_registry, menu)
-        menuItemDelete = menu!!.findItem(R.id.menu_delete)
+        menuItemDelete = menu!!.findItem(R.id.mnu_delete)
         menuItemDelete.isVisible = isEditMode
         return true
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId){
-            R.id.menu_save -> {
+            R.id.mnu_save -> {
                 if(isEditMode){
-                    Util.showDialogCondition(this, getString(R.string.txtSaveActionQuestion), {saveUser()})
+                    Util.Util.showDialogCondition(this, getString(R.string.TextSaveActionQuestion), {saveUser()})
                 } else {
                     saveUser()
                 }
                 true
             }
-            R.id.menu_delete -> {
-                Util.showDialogCondition(this, getString(R.string.txtDeleteActionQuestion), {deleteUser()})
+            R.id.mnu_delete -> {
+                Util.Util.showDialogCondition(this, getString(R.string.TextDeleteActionQuestion), {deleteUser()})
                 true
             }
-            R.id.menu_cancel -> {
+            R.id.mnu_cancel -> {
                 cleanScreen()
                 true
             }
@@ -127,6 +127,8 @@ class RegisterActivity: AppCompatActivity() {
                     cleanScreen()
                     Toast.makeText(this, getString(R.string.MsgSaveSuccess)
                         , Toast.LENGTH_LONG).show()
+                    startActivity(Intent(this, Login::class.java))
+                    finish()
                 }
             } else {
                 Toast.makeText(this, "Datos incompletos", Toast.LENGTH_LONG).show()

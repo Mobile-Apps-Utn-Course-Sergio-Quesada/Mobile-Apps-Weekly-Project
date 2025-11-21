@@ -2,6 +2,20 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- Permisos necesarios -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
+    <!-- ✅ Features de hardware (la cámara es opcional, no obligatoria) -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,16 +25,50 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Spots">
+
+        <!-- ✅ TODAS LAS ACTIVITIES REGISTRADAS -->
+
+        <!-- ProfileActivity -->
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+
+        <!-- ExploreForumsActivity -->
+        <activity
+            android:name=".ExploreForumsActivity"
+            android:exported="false" />
+
+        <!-- MyForumsActivity -->
+        <activity
+            android:name=".MyForumsActivity"
+            android:exported="false" />
+
+        <!-- MenuAppActivity -->
+        <activity
+            android:name=".MenuAppActivity"
+            android:exported="false" />
+
+        <!-- PostActivity -->
+        <activity
+            android:name=".PostActivity"
+            android:exported="false" />
+
+        <!-- RegisterActivity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Login -->
         <activity
             android:name=".Login"
             android:exported="false" />
 
+        <!-- MainActivity (LAUNCHER) -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
