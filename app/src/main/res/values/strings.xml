@@ -6,10 +6,151 @@
     <string name="errorMsgGetById">Error obteniendo data por Id</string>
     <string name="errorMsgDataWasNotFound">Data no encontrada</string>
     <string name="errorMsgRemove">Error removiendo la data</string>
-    <string name="txtEmail">Correo</string>
-    <string name="txtPassword">Contraseña</string>
-    <string name="txtUsername">Usuario</string>
+    <string name="txtEmail">* Correo</string>
+    <string name="txtPassword">* Contraseña</string>
+    <string name="txtUsername">* Usuario</string>
     <string name="txtButton">Guardar</string>
-    <string name="txtFullName">Nombre Completo</string>
+    <string name="txtFullName">* Nombre Completo</string>
     <string name="txtRegister">Registro</string>
+    <string name="txtMenu_Save">Guardar</string>
+    <string name="txtMenu_Delete">Borrar</string>
+    <string name="txtMenu_Cancel">Cancelar</string>
+    <string name="MsgDuplicateEntry">No se permiten datos duplicados</string>
+    <string name="MsgSaveSuccess">La información se guardó con éxito</string>
+    <string name="MsgDeleteSuccess">La información se eliminó con éxito</string>
+    <string name="TextYes">Sí</string>
+    <string name="TextNo">No</string>
+    <string name="TextTitleDialogQuestion">Pregunta...</string>
+
+    <!-- Post Form Titles and Labels -->
+    <string name="title_post_form">Create Post</string>
+    <string name="label_post_id">Post ID</string>
+    <string name="label_post_title">Post Title</string>
+    <string name="label_post_content">Post Content</string>
+    <string name="label_user_name">Author Name</string>
+    <string name="label_forum_name">Forum Name</string>
+    <string name="label_post_image">Post Image</string>
+
+    <!-- Hints -->
+    <string name="hint_post_id">Enter post ID</string>
+    <string name="hint_post_title">Enter post title</string>
+    <string name="hint_post_content">Write your post content here…</string>
+    <string name="hint_user_name">Enter your name</string>
+    <string name="hint_forum_name">Enter forum name</string>
+
+    <!-- Content Descriptions -->
+    <string name="desc_search_post">Search post by ID</string>
+    <string name="desc_post_image">Post image preview</string>
+    <string name="desc_take_photo">Take photo with camera</string>
+    <string name="desc_select_from_gallery">Select image from gallery</string>
+
+    <!-- Messages -->
+    <string name="MsgDataNoFound">Post not found</string>
+    <string name="MsgDuplicateDate">A post with this ID already exists</string>
+    <string name="MsgIncompleteData">Please complete all required fields</string>
+
+    <!-- Error Messages -->
+    <string name="ErrorMsgAdd">Error adding post</string>
+    <string name="ErrorMsgUpdate">Error updating post</string>
+    <string name="ErrorMsgRemove">Error deleting post</string>
+    <string name="ErrorMsgGetById">Error retrieving post</string>
+    <string name="ErrorMsgGetAll">Error retrieving posts</string>
+    <string name="ErrorMsgCameraCapture">Failed to capture image</string>
+    <string name="ErrorMsgGallerySelection">Failed to select image</string>
+    <string name="ErrorMsgSavingImage">Failed to save image</string>
+
+    <!-- Dialog Messages -->
+    <string name="TextSaveActionQuestion" translatable="false">Do you want to save the changes?</string>
+    <string name="TextDeleteActionQuestion" translatable="false">Are you sure you want to delete this post?</string>
+
+    <!-- MenuAppActivity Strings -->
+    <string name="menu_app_title">Spots - Community</string>
+    <string name="welcome_user">Welcome, %1$s</string>
+    <string name="search_hint">Buscar posts, foros…</string>
+    <string name="btn_my_forums">Mis Foros</string>
+    <string name="btn_explore_forums">Explorar</string>
+    <string name="btn_my_profile">Perfil</string>
+    <string name="feed_header">Feed de Posts</string>
+    <string name="empty_posts_message">No hay posts disponibles</string>
+    <string name="empty_posts_subtitle">¡Sé el primero en crear uno!</string>
+    <string name="fab_create_post">Crear nuevo post</string>
+
+    <!-- Menu Main App -->
+    <string name="menu_refresh">Actualizar</string>
+    <string name="menu_filter_by_forum">Filtrar por Foro</string>
+    <string name="menu_my_posts">Mis Posts</string>
+    <string name="menu_logout">Cerrar Sesión</string>
+
+    <!-- Post Item Strings -->
+    <string name="post_in_forum">in %1$s</string>
+    <string name="upvote">Upvote</string>
+    <string name="downvote">Downvote</string>
+    <string name="comment">Comentar</string>
+    <string name="share">Compartir</string>
+    <string name="favorite">Favorito</string>
+
+    <!-- Toast Messages -->
+    <string name="no_posts_available">No hay posts disponibles. ¡Crea el primero!</string>
+    <string name="error_loading_posts">Error al cargar posts</string>
+    <string name="no_results_found">No se encontraron posts con: %1$s</string>
+    <string name="error_search">Error en la búsqueda</string>
+    <string name="posts_updated">Posts actualizados</string>
+    <string name="no_forums_available">No hay foros disponibles</string>
+    <string name="showing_forum_posts">Mostrando posts de: %1$s</string>
+    <string name="error_filtering">Error al filtrar</string>
+    <string name="no_user_posts">No tienes posts todavía</string>
+    <string name="showing_user_posts">Mostrando tus posts (%1$d)</string>
+    <string name="logout_confirmation">¿Estás seguro de que deseas cerrar sesión?</string>
+    <string name="added_to_favorites">Añadido a favoritos</string>
+    <string name="removed_from_favorites">Eliminado de favoritos</string>
+    <string name="share_post_title">Compartir post</string>
+
+    <!-- MyForumsActivity Strings -->
+    <string name="my_forums_header">Mis Foros</string>
+    <string name="empty_my_forums_message">No te has unido a ningún foro todavía</string>
+    <string name="empty_my_forums_subtitle">¡Explora y únete a foros de tu interés!</string>
+    <string name="create_forum">Crear nuevo foro</string>
+    <string name="no_forums">Sin foros</string>
+    <string name="menu_explore_forums">Explorar Foros</string>
+
+    <!-- ExploreForumsActivity Strings -->
+    <string name="explore_forums_header">Explorar Foros</string>
+    <string name="search_forums_hint">Buscar foros…</string>
+    <string name="empty_explore_forums_message">No hay foros disponibles</string>
+    <string name="menu_sort_by_name">Ordenar por Nombre</string>
+    <string name="menu_sort_by_members">Ordenar por Miembros</string>
+    <string name="forums_updated">Foros actualizados</string>
+    <string name="sort_by_name_success">Ordenado por nombre</string>
+
+    <!-- ProfileActivity Strings -->
+    <string name="profile_icon">Icono de perfil</string>
+    <string name="member_since">Miembro desde: %1$s</string>
+    <string name="posts_icon">Icono de posts</string>
+    <string name="forums_icon">Icono de foros</string>
+    <string name="btn_edit_profile">Editar Perfil</string>
+    <string name="btn_my_posts">Mis Posts</string>
+    <string name="btn_my_forums_profile">Mis Foros</string>
+    <string name="profile_updated">Perfil actualizado</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="error_loading_profile">Error al cargar perfil</string>
+    <string name="logout_confirm_profile">¿Estás seguro de que deseas cerrar sesión?</string>
+
+    <!-- Common Menu Strings -->
+    <string name="menu_refresh">Actualizar</string>
+    <string name="menu_logout">Cerrar Sesión</string>
+
+    <!-- User Stats Strings -->
+    <string name="user_posts_count">%1$d posts</string>
+    <string name="user_forums_count">%1$d foros</string>
+    <string name="member_since_date">Miembro desde: %1$s</string>
+
+    <!-- Error Messages -->
+    <string name="error_loading_forums">Error al cargar foros</string>
+    <string name="error_search_forums">Error en la búsqueda</string>
+    <string name="no_results_forums">No se encontraron foros con: %1$s</string>
+
+    <!-- Toast Messages -->
+    <string name="forum_created">Foro creado exitosamente</string>
+    <string name="forum_joined">Te has unido al foro</string>
+    <string name="forum_left">Has salido del foro</string>
 </resources>

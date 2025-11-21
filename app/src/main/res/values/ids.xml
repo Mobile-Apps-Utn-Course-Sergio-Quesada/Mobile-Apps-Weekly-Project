@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <item name="btnSavePost" type="id" />
+    <item name="mnu_delete" type="id" />
+    <item name="mnu_save" type="id" />
+    <item name="mnu_cancel" type="id" />
+
+        <!-- Post Activity IDs -->
+        <item name="txtTitlePost" type="id" />
+        <item name="lblPostId" type="id" />
+        <item name="edtPostId" type="id" />
+        <item name="btnSearchId_post" type="id" />
+        <item name="layoutPostId" type="id" />
+        <item name="lblPostTitle" type="id" />
+        <item name="edtPostTitle" type="id" />
+        <item name="lblPostContent" type="id" />
+        <item name="edtPostContent" type="id" />
+        <item name="lblUserName" type="id" />
+        <item name="edtUserName" type="id" />
+        <item name="lblForumName" type="id" />
+        <item name="edtForumName" type="id" />
+        <item name="lblPostImage" type="id" />
+        <item name="cardImagePreview" type="id" />
+        <item name="imgPreview" type="id" />
+        <item name="layoutImageButtons" type="id" />
+        <item name="btnTakePhoto" type="id" />
+        <item name="btnSelectFromGallery" type="id" />
+    <!-- MenuAppActivity IDs -->
+    <item name="cardSearch" type="id" />
+    <item name="searchViewPosts" type="id" />
+    <item name="layoutQuickActions" type="id" />
+    <item name="btnMyForums" type="id" />
+    <item name="btnExploreForums" type="id" />
+    <item name="btnMyProfile" type="id" />
+    <item name="txtFeedHeader" type="id" />
+    <item name="dividerFeed" type="id" />
+    <item name="recyclerViewPosts" type="id" />
+    <item name="layoutEmptyState" type="id" />
+    <item name="fabCreatePost" type="id" />
+
+    <!-- Menu Main App IDs -->
+    <item name="menu_refresh" type="id" />
+    <item name="menu_filter_by_forum" type="id" />
+    <item name="menu_my_posts" type="id" />
+    <item name="menu_logout" type="id" />
+
+    <!-- Item Post IDs -->
+    <item name="cardPost" type="id" />
+    <item name="txtPostUsername" type="id" />
+    <item name="txtPostForum" type="id" />
+    <item name="txtPostTitle" type="id" />
+    <item name="txtPostContent" type="id" />
+    <item name="imgPostImage" type="id" />
+    <item name="layoutPostActions" type="id" />
+    <item name="btnUpvote" type="id" />
+    <item name="txtVoteCount" type="id" />
+    <item name="btnDownvote" type="id" />
+    <item name="btnComment" type="id" />
+    <item name="txtCommentCount" type="id" />
+    <item name="btnShare" type="id" />
+    <item name="btnFavorite" type="id" />
+    <!-- MyForumsActivity IDs -->
+    <item name="txtMyForumsHeader" type="id" />
+    <item name="dividerMyForums" type="id" />
+    <item name="recyclerViewMyForums" type="id" />
+    <item name="layoutEmptyStateForums" type="id" />
+    <item name="txtEmptyForumsMessage" type="id" />
+    <item name="fabCreateForum" type="id" />
+    <item name="menu_refresh_forums" type="id" />
+    <item name="menu_explore_forums" type="id" />
+
+    <!-- ExploreForumsActivity IDs -->
+    <item name="cardSearchForums" type="id" />
+    <item name="searchViewForums" type="id" />
+    <item name="txtExploreHeader" type="id" />
+    <item name="dividerExplore" type="id" />
+    <item name="recyclerViewExploreForums" type="id" />
+    <item name="layoutEmptyStateExplore" type="id" />
+    <item name="txtEmptyExploreMessage" type="id" />
+    <item name="menu_refresh_explore" type="id" />
+    <item name="menu_sort_by_name" type="id" />
+    <item name="menu_sort_by_members" type="id" />
+
+    <!-- ProfileActivity IDs -->
+    <item name="cardProfile" type="id" />
+    <item name="imgProfileIcon" type="id" />
+    <item name="txtProfileUsername" type="id" />
+    <item name="txtProfileFullName" type="id" />
+    <item name="txtProfileEmail" type="id" />
+    <item name="txtMemberSince" type="id" />
+    <item name="cardStats" type="id" />
+    <item name="txtPostCount" type="id" />
+    <item name="txtForumCount" type="id" />
+    <item name="cardActions" type="id" />
+    <item name="btnEditProfile" type="id" />
+    <item name="btnMyPosts" type="id" />
+    <item name="btnMyForums" type="id" tools:ignore="DuplicateDefinition" />
+    <item name="menu_refresh_profile" type="id" />
+    <item name="menu_settings" type="id" />
+    <item name="menu_logout_profile" type="id" />
+    </resources>

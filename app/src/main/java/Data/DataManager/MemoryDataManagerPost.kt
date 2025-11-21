@@ -11,18 +11,18 @@ object MemoryDataManagerPost : IPostDataManager {
     }
 
     override fun update(post: Post) {
-        remove(post.Title)
+        remove(post.ID)
         add(post)
     }
 
     override fun remove(id: String) {
-        postList.removeIf { it.Title.trim() == id.trim() }
+        postList.removeIf { it.ID.trim() == id.trim() }
     }
 
     override fun getById(id: String): Post? {
-        try {
-            var result = postList.filter { it.Title == id }
-            return if (result.any()) result[0] else null
+        return try {
+            val result = postList.filter { it.ID.trim() == id.trim() }
+            if (result.any()) result[0] else null
         } catch (e: Exception) {
             throw e
         }
@@ -31,9 +31,9 @@ object MemoryDataManagerPost : IPostDataManager {
     override fun getAll(): List<Post> = postList
 
     override fun getByTitle(title: String): Post? {
-        try {
-            var result = postList.filter { it.Title == title }
-            return if (result.any()) result[0] else null
+        return try {
+            val result = postList.filter { it.Title.trim() == title.trim() }
+            if (result.any()) result[0] else null
         } catch (e: Exception) {
             throw e
         }
